@@ -1,5 +1,6 @@
-# ***Install hue on hortonworks platform***
+# Install hue on hortonworks platform
 ---
+
 ###参考链接
 [hortonworks](https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.4/bk_command-line-installation/content/installing_hue.html)
 
@@ -9,7 +10,7 @@
 https://www.dropbox.com/s/0rhrlnjmyw6bnfc/hue-4.2.0.tgz?dl=0)
 
 
-##***Pre-configuration:***
+##Pre-configuration:
 
 Hadoop and other services
 Depending on which apps you need, you need to make sure that some Hadoop services are already setup (that way Hue can talk to them).
@@ -995,7 +996,7 @@ yum install -y cyrus-sasl-gssapi-2.1.26-23.el7.x86_64
     host=hdp005
     port=5432
     user=hue
-    password=ajmidehue
+    password=
     name=hue
     # Database engine is typically one of:
     # postgresql_psycopg2, mysql, sqlite3 or oracle.
@@ -1050,8 +1051,8 @@ yum install -y cyrus-sasl-gssapi-2.1.26-23.el7.x86_64
 
     host=exmail.qq.com
     port=587
-    user=hdp-alert@ajmide.cn
-    password=xtoQNyDaGpRZnPL3
+    user=
+    password=
     tls=yes
     default_from_email=hdp-alert@ajmide.cn
     # The SMTP server information for email notification delivery
@@ -1935,13 +1936,12 @@ yum install -y cyrus-sasl-gssapi-2.1.26-23.el7.x86_64
     [[[mysql]]]
       # Name to show in the UI.
       nice_name=aliyun-mysql-test
-      name=ajmide_main
+      name=
       engine=mysql
-      host=rdsnmfnfuqqjarq.mysql.rds.aliyuncs.com
+      host=
       port=3306
       user=datasync
-      password=ymSJVWK8BtE6zE79
-      #options='{"url": "jdbc:mysql://rdsnmfnfuqqjarq.mysql.rds.aliyuncs.com:3306/ajmide_main", "user": "datasync", "password": "ymSJVWK8BtE6zE79"}'
+      password=
     
     # sqlite configuration.
     ## [[[sqlite]]]
